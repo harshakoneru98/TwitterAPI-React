@@ -6,10 +6,16 @@ export default function Header() {
     const router = useRouter();
 
     const [isRoute, setIsRoute] = useState('');
+    const [isLevel, setIsLevel] = useState('');
 
     useEffect(() => {
         setIsRoute(router.route);
-    });
+        if (router.route == '/') {
+            setIsLevel('home');
+        } else {
+            setIsLevel('services');
+        }
+    }, [isRoute]);
 
     let changeRoute = (elementRoute) => {
         setIsRoute(elementRoute);
@@ -27,26 +33,28 @@ export default function Header() {
             >
                 <img src={logo.src} alt="Main" />
             </a>
-            <nav className="my-2 my-md-0 mr-md-3">
-                <a
-                    className="p-2 text-dark"
-                    onClick={(e) => {
-                        changeRoute('/twitter-api/check-user');
-                        e.preventDefault();
-                    }}
-                >
-                    Check User
-                </a>
-                <a
-                    className="p-2 text-dark"
-                    onClick={(e) => {
-                        changeRoute('/twitter-api/fetch-tweets');
-                        e.preventDefault();
-                    }}
-                >
-                    Fetch Tweets
-                </a>
-            </nav>
+            {isLevel != 'home' && (
+                <nav className="my-2 my-md-0 mr-md-3">
+                    <a
+                        className="p-2 text-dark"
+                        onClick={(e) => {
+                            changeRoute('/twitter-api/check-user');
+                            e.preventDefault();
+                        }}
+                    >
+                        Check User
+                    </a>
+                    <a
+                        className="p-2 text-dark"
+                        onClick={(e) => {
+                            changeRoute('/twitter-api/fetch-tweets');
+                            e.preventDefault();
+                        }}
+                    >
+                        Fetch Tweets
+                    </a>
+                </nav>
+            )}
         </div>
     );
 }

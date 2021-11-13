@@ -4,6 +4,7 @@ import App from 'next/app';
 import withReduxStore from '../src/store/lib/with-redux-store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/styles/header.css';
+import '../src/styles/common.css';
 
 function MyApp({ Component, pageProps, store }) {
     return (
