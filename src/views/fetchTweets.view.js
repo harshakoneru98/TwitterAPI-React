@@ -1,12 +1,12 @@
 import Header from '../components/header.component';
 
-function HomeView() {
+function FetchTweetsView() {
     return (
         <div>
             <Header />
-            <div>This is Home Page</div>
+            <div>This is Fetch Tweets Page</div>
         </div>
     );
 }
 
-export default HomeView;
+export default FetchTweetsView;

@@ -5,6 +5,7 @@
 .main-header a {
     text-decoration: none;
     color: rgba(0,0,0,.55) !important;
+    cursor: pointer;
 }
 
 .navbar-brand{

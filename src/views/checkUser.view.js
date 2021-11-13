@@ -1,12 +1,12 @@
 import Header from '../components/header.component';
 
-function HomeView() {
+function CheckUserView() {
     return (
         <div>
             <Header />
-            <div>This is Home Page</div>
+            <div>This is Check User Page</div>
         </div>
     );
 }
 
-export default HomeView;
+export default CheckUserView;

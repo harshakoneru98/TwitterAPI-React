@@ -1,13 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import logo from '../../public/assets/logo-nobg.png';
 
 export default function Header() {
+    const router = useRouter();
+
+    const [isRoute, setIsRoute] = useState('');
+
+    useEffect(() => {
+        setIsRoute(router.route);
+    });
+
+    let changeRoute = (elementRoute) => {
+        setIsRoute(elementRoute);
+        router.push(elementRoute);
+    };
+
     return (
         <div className="main-header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
             <a
                 className="navbar-brand"
                 onClick={(e) => {
-                    // changeRoute('/');
+                    changeRoute('/');
                     e.preventDefault();
                 }}
             >
@@ -17,7 +31,7 @@ export default function Header() {
                 <a
                     className="p-2 text-dark"
                     onClick={(e) => {
-                        // changeRoute('/caaas/check-score');
+                        changeRoute('/twitter-api/check-user');
                         e.preventDefault();
                     }}
                 >
@@ -26,7 +40,7 @@ export default function Header() {
                 <a
                     className="p-2 text-dark"
                     onClick={(e) => {
-                        // changeRoute('/caaas/add-record');
+                        changeRoute('/twitter-api/fetch-tweets');
                         e.preventDefault();
                     }}
                 >
