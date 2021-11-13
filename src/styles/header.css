@@ -1,0 +1,12 @@
+.navbar-brand img{
+    height: 2.7em;
+}
+
+.main-header a {
+    text-decoration: none;
+    color: rgba(0,0,0,.55) !important;
+}
+
+.navbar-brand{
+    margin-right: auto !important;
+}
