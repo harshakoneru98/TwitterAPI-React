@@ -12,8 +12,10 @@ export default function Header() {
         setIsRoute(router.route);
         if (router.route == '/') {
             setIsLevel('home');
+        } else if (router.route == '/twitter-api/check-user') {
+            setIsLevel('check-user');
         } else {
-            setIsLevel('services');
+            setIsLevel('fetch-tweets');
         }
     }, [isRoute]);
 
@@ -36,7 +38,11 @@ export default function Header() {
             {isLevel != 'home' && (
                 <nav className="my-2 my-md-0 mr-md-3">
                     <a
-                        className="p-2 text-dark"
+                        className={
+                            isLevel == 'check-user'
+                                ? 'p-2 text-dark black-link'
+                                : 'p-2 text-dark'
+                        }
                         onClick={(e) => {
                             changeRoute('/twitter-api/check-user');
                             e.preventDefault();
@@ -45,7 +51,11 @@ export default function Header() {
                         Check User
                     </a>
                     <a
-                        className="p-2 text-dark"
+                        className={
+                            isLevel == 'fetch-tweets'
+                                ? 'p-2 text-dark black-link'
+                                : 'p-2 text-dark'
+                        }
                         onClick={(e) => {
                             changeRoute('/twitter-api/fetch-tweets');
                             e.preventDefault();

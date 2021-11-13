@@ -11,3 +11,7 @@
 .navbar-brand{
     margin-right: auto !important;
 }
+
+.main-header a.black-link{
+    color: rgba(0,0,0) !important;
+}
