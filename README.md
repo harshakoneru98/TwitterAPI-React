@@ -35,3 +35,18 @@ npm run dev
 
 #### Case 3: Invalid Username
 ![Case 3: Invalid Username](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/5.%20Check%20User%20Case%203.png)
+
+### Fetch Tweets Page
+![Fetch Tweets Page](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/6.%20Get%20Tweets.png)
+
+#### Case 1: Existing Username with tweets
+![Case 1: Existing Username with tweets](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/7.%20Get%20Tweets%20Case%201.png)
+
+#### Case 2: Existing Username without tweets
+![Case 2: Existing Username without tweets](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/8.%20Get%20Tweets%20Case%202.png)
+
+#### Case 3: Username doesn't exist
+![Case 3: Username doesn't exist](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/9.%20Get%20Tweets%20Case%203.png)
+
+#### Case 4: Invalid Username
+![Case 4: Invalid Username](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/10.%20Get%20Tweets%20Case%204.png)
