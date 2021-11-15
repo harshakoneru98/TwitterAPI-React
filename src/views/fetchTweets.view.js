@@ -66,6 +66,18 @@ function FetchTweetsView() {
                             >
                                 Clear
                             </a>
+
+                            {tweets?.user?.data && textStatus && (
+                                <a
+                                    href={`data:text/json;charset=utf-8,${encodeURIComponent(
+                                        JSON.stringify(tweets?.user?.data)
+                                    )}`}
+                                    download="output.json"
+                                    className="btn btn-success btn-block btn-md center-block"
+                                >
+                                    Download
+                                </a>
+                            )}
                         </div>
                     </form>
 
