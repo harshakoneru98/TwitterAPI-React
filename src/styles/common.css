@@ -23,21 +23,51 @@
     transform: translate(-50%, 0%); 
 }
 
+.validate-wrapper {
+    width: 100%;
+}
+
+.validate-user {
+    width: 600px;
+    display: table;
+    margin: 5% auto;
+}
+
+.validate-user .form-group{
+    width: 500px !important;
+    margin: 0 auto;
+}
+
+.validate-user table{
+    margin-top: 50px;
+    width: 800px;
+}
+
+.validate-user th{
+    text-align: center;
+}
+
+.validate-user td.latest{
+    min-width: 100px;
+    text-align: center;
+
+}
+
 .auth-inner p {
     text-align: center;
 }
 
-.auth-wrapper .form-group {
-    margin-bottom: 1rem;
+.auth-wrapper .form-group, .validate-wrapper .form-group {
+    margin-bottom: 2rem;
 }
 
-.auth-wrapper .form-group label{
+.auth-wrapper .form-group label, .validate-wrapper .form-group label{
     margin-bottom: 0.5rem;
     font-weight: 500;
     text-align: justify;
 }
 
-.auth-wrapper .btn-block {
+.auth-wrapper .btn-primary, .validate-wrapper .btn-primary{
     background-color: #137dc5;
     border-color: #137dc5;
     display: inline-block;
@@ -47,11 +77,28 @@
     margin-right: 10px;
 }
 
-.auth-wrapper h3 {
+.auth-wrapper h3, .validate-wrapper h3 {
     text-align: center;
     margin: 0;
     line-height: 1;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
     font-size: 1.75rem;
     font-family: 'Fira Sans', sans-serif;
+}
+
+.validate-user .btn-primary{
+    margin-right: 10px;
+}
+
+.label-text{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.label-green{
+    color: green;
+}
+
+.label-red{
+    color: red;
 }

@@ -5,7 +5,7 @@ const GetTweetThunk = (username) => {
         fetch('/api/get-tweets?username=' + username)
             .then((res) => res.json())
             .then((data) => {
-                dispatch(getTweets(data.data));
+                dispatch(getTweets(data));
             });
     };
 };

@@ -5,7 +5,7 @@ const ValidateUserThunk = (username) => {
         fetch('/api/validate-user?username=' + username)
             .then((res) => res.json())
             .then((data) => {
-                dispatch(validateUser(data.data));
+                dispatch(validateUser(data));
             });
     };
 };
