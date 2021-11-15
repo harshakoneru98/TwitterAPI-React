@@ -28,7 +28,7 @@ function FetchTweetsView() {
         <div>
             <Header />
             <div className="validate-wrapper">
-                <div className="validate-user">
+                <div className="tweet-user">
                     <form className="form">
                         <h3>Fetch Tweets</h3>
 

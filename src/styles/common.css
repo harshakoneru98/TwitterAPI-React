@@ -27,27 +27,31 @@
     width: 100%;
 }
 
-.validate-user {
+.validate-user{
+    width: 600px;
+}
+
+.tweet-user {
     width: 600px;
     display: table;
     margin: 5% auto;
 }
 
-.validate-user .form-group{
+.tweet-user .form-group{
     width: 500px !important;
     margin: 0 auto;
 }
 
-.validate-user table{
+.tweet-user table{
     margin-top: 50px;
     width: 800px;
 }
 
-.validate-user th{
+.tweet-user th{
     text-align: center;
 }
 
-.validate-user td.latest{
+.tweet-user td.latest{
     min-width: 100px;
     text-align: center;
 
@@ -86,7 +90,7 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.validate-user .btn-primary{
+.validate-user .btn-primary, .tweet-user .btn-primary{
     margin-right: 10px;
 }
 
