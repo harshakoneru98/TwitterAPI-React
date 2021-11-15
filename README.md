@@ -18,3 +18,6 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Output
+![Home Page](https://github.com/harshakoneru98/TwitterAPI-React/blob/main/public/output/1.%20Home%20Page.png)
